@@ -171,7 +171,7 @@ export default function Page() {
       alert("Invalid column name.");
       return;
     }
-    if (columns.some((c: { key: string }) => c.key === key)) {
+    if (columns.some((c) => c.key === key)) {
       alert("Column already exists.");
       return;
     }
